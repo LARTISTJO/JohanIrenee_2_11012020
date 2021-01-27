@@ -50,10 +50,25 @@ nav li
 
 /*section recherche*/
 
+h1
+{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 15px;
+    margin-top: 0px;
+}
+
+#section-recherche p
+{
+    display: flex;
+    padding-left: 40px;
+    margin-top: -20px;
+}
 #grande-cartouche
 {
    display: flex;
    width: 30%;
+   margin-left: 40px;
 }
 
 #localisation
@@ -72,7 +87,6 @@ nav li
 #recherche
 {
     padding: 15px;
-    margin: 0px;
     border-top: 1.5px #F2F2F2 solid;
     border-bottom: 1.5px #F2F2F2 solid;
     border-left: none;
@@ -101,49 +115,74 @@ button
 #section-filtres
 {
     display: flex;
-    width: 70%;
-    border: brown solid 1.5px;
     justify-content: space-between;
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 70%;
 }
 
-#section-filtres p
-{
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    padding: 15px;
-}
 
 .cartouche
 {
     display: flex;
-    border: 1.7px solid gray;
-    border-radius: 37% 50% 50% 50%;
-    border-top: ;
-
+    height: 34px;
+    border: 1.7px solid #D3D3D3;
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: 40px;
 }
 
 .cercle
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 25px;
     color: #0065FC;
-    margin: 5px;
-    position: relative;
-    right: 5%;
+    margin-left: -52px;
+    height: 70px;
+    width: 70px;
+    
 }
 
 .texte
 {
-    padding: 15px;
     font-size: 16px;
     font-weight: bold;
     color: black; 
+    padding: 20px;
+    height: 28px;
+    border: teal solid 2px;
 }
 
 .cercle .fas
 {
     font-size: 30px;
+}
+
+
+/*information*/
+
+.information
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+    align-items: center;
+    
+}
+
+.information .fas
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background-color: white;
+    color: #0065FC;
+    font-size: 15px;
+    border-radius: 50%;
+    border:  1.7px solid #D3D3D3;
+    margin-right: 10px;
 }
