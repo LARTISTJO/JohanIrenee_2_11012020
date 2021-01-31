@@ -8,7 +8,6 @@ body
 #bloc_page 
 {
     width: 1400px;
-    margin: auto;
 }
 
 /*header*/
@@ -56,19 +55,18 @@ nav li
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-
 }
 
 h1
 {
     display: flex;
     font-size: 21px;
+    height: 0px;
 }
 
 #section-recherche p
 {
     display: flex;
-    margin-top: -10px;
     font-size: 14.5px;
 }
 #grande-cartouche
@@ -151,10 +149,9 @@ button
     justify-content: center;
     align-items: center;
     height: 40px;
-    border: 3px solid #D3D3D3;
+    border: 2px solid #D3D3D3;
     border-radius: 50px;
-    padding: 3px;
-    
+    padding: 3px 20px 3px 25px; 
 }
 
 .cercle
@@ -165,7 +162,7 @@ button
     background-color: #DEEBFF;
     border-radius: 50%;
     color: #0065FC;
-    margin-left: -10px;
+    margin-left: -30px;
     height: 50px;
     width: 50px;
     font-size: 20px;
@@ -174,10 +171,8 @@ button
 
 .texte
 {
-    display: flex;
-    justify-content: center;
-    padding: 22px 15px 0px 7px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 
@@ -213,4 +208,139 @@ button
     align-items: center;
     font-size: 15px;
     color: black;
+}
+/*hébergements*/
+
+#hebergements
+{
+    display: flex;
+    margin-left: 40px;
+    
+}
+
+#hebergements p
+{
+    font-size: 15px;
+    color: black;
+    margin: 5px 0px;
+}
+
+.hebergements1
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    width: 925px;
+    height: 630px;
+    border-radius: 50px;
+    margin-right: 30px;
+    padding: 0px;
+}
+
+.hebergements1 h2
+{
+margin-left: 40px;
+width: 900px;
+margin-bottom: 0px;
+}
+
+
+.hebergements1 figure
+{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 5px;
+    background-color: white;
+    height: 200px;
+    max-width: 240px;
+    border-radius: 20px; 
+}
+
+.hebergements1 img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+.hebergements1 a
+{
+    text-decoration: none;
+}
+
+ h3
+{
+    margin: 0px;
+    color: black;
+}
+
+.hebergements1 figcaption
+{
+    padding: 3px;
+}
+
+.étoile
+{
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.gris
+{
+    color: #F2F2F2;
+}
+
+.hebergements1 span
+{
+    margin-left: 40px;
+    font-size: 18.72px;
+    font-weight: bold;
+}
+
+aside
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        width: 430px;
+        height: 620px;
+        border-radius: 50px;
+    }
+    
+aside a 
+{
+    text-decoration: none;
+}
+
+aside figure
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 130px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+aside img
+{
+    border-radius: 20px 0px 0px 20px;
+}
+
+aside h2
+{
+    margin-left: 40px;
+    width: 900px;
+    margin-bottom: 0px;
+}
+
+aside figcaption
+{
+    padding: 3px;
+}
+
+aside h3
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
 }
