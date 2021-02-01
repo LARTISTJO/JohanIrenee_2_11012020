@@ -7,7 +7,8 @@ body
 
 #bloc_page 
 {
-    width: 1400px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /*header*/
@@ -33,8 +34,14 @@ nav li
 {
     color: #0065FC;
     text-decoration: none;
+    border-top: transparent 5px solid;
+    padding-top: 23px;
 }
 
+.hebergements-marseille:hover
+{
+    border-top: #0065FC 5px solid;
+}
 .activites
 {
     color: black;
@@ -128,32 +135,35 @@ button
 #section-filtres
 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     height: 70px;
-    width: 950px;
     margin-top: 20px;
 }
 
 #filtres
 {
     display: flex;
-    align-items: center;
     height: 20px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
+    margin: -10px 30px 0px 0px;
 }
 .cartouche
 {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 40px;
     border: 2px solid #D3D3D3;
     border-radius: 50px;
-    padding: 3px 20px 3px 25px; 
+    padding: 3px 20px 3px 25px;
+    margin: 10px 25px 20px 0px; 
 }
 
+.cartouche:hover
+{
+    background-color: #DEEBFF;
+}
 .cercle
 {
     display: flex;
@@ -169,21 +179,20 @@ button
     
 }
 
-.texte
+#section-filtres p
 {
     font-weight: bold;
     margin-left: 10px;
+    font-size: 17px; 
 }
-
 
 /*information*/
 
 .information
 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 35px;
     width: 35%;    
 }
 
@@ -214,8 +223,8 @@ button
 #hebergements
 {
     display: flex;
-    margin-left: 40px;
-    
+    margin-left: 20px;
+    margin-top: 0px;
 }
 
 #hebergements p
@@ -228,20 +237,25 @@ button
 .hebergements1
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #F2F2F2;
-    width: 925px;
-    height: 630px;
+    width: 65%;
+    height: 30%;
     border-radius: 50px;
-    margin-right: 30px;
-    padding: 0px;
+    margin: 20px 35px 0px 0px 
+}
+
+.hebergements2
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px -10px -5px;
 }
 
 .hebergements1 h2
 {
-margin-left: 40px;
-width: 900px;
-margin-bottom: 0px;
+margin: 40px 0px 20px 40px;
+
 }
 
 
@@ -249,12 +263,12 @@ margin-bottom: 0px;
 {
     display: flex;
     flex-direction: column;
-    margin: 30px;
-    padding: 5px;
     background-color: white;
+    border: white solid 4px;
     height: 200px;
-    max-width: 240px;
+    width: 240px;
     border-radius: 20px; 
+    margin: 5px -10px 15px 40px;
 }
 
 .hebergements1 img
@@ -270,6 +284,7 @@ margin-bottom: 0px;
 {
     margin: 0px;
     color: black;
+    font-size: 18px;
 }
 
 .hebergements1 figcaption
@@ -290,7 +305,7 @@ margin-bottom: 0px;
 
 .hebergements1 span
 {
-    margin-left: 40px;
+    margin: 30px 0px 40px 40px;
     font-size: 18.72px;
     font-weight: bold;
 }
@@ -300,9 +315,10 @@ aside
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        width: 430px;
-        height: 620px;
+        width: 35%;
+        height: 35%;
         border-radius: 50px;
+        margin: 20px 30px 0px 0px 
     }
     
 aside a 
@@ -313,12 +329,12 @@ aside a
 aside figure
 {
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    border: white solid 4px;
     height: 130px;
     width: 350px;
     background-color: white;
     border-radius: 20px;
+    margin-bottom: 25px;
 }
 
 aside img
@@ -328,19 +344,22 @@ aside img
 
 aside h2
 {
-    margin-left: 40px;
-    width: 900px;
-    margin-bottom: 0px;
+    margin: 40px 0px 20px 40px;
 }
 
 aside figcaption
 {
     padding: 3px;
+    margin-left: 20px;
 }
 
 aside h3
 {
     display: flex;
-    flex-wrap: wrap;
     padding-right: 40px;
+}
+
+aside .étoile
+{
+    margin-top: 20%;
 }
