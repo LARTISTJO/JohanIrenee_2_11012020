@@ -17,30 +17,38 @@ header
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+nav
+{
+    width: 39%;
+    margin-left: -50px;
+}
 nav ul
 {
-    list-style-type: none;
     display: flex;
+    
+    list-style-type: none;
 }
 
 nav li
 {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .hebergements-marseille 
 {
     color: #0065FC;
     text-decoration: none;
-    border-top: transparent 5px solid;
-    padding-top: 23px;
+    border-top: transparent 2px solid;
+    padding: 30px 17px 0px 17px;
+
 }
 
 .hebergements-marseille:hover
 {
-    border-top: #0065FC 5px solid;
+    border-top: #0065FC 2px solid;
 }
 .activites
 {
@@ -51,6 +59,7 @@ nav li
 #inscription
 {
     color: #0065FC;
+    font-weight: bold;
 }
 
 
@@ -181,6 +190,7 @@ button
 
 #section-filtres p
 {
+    color: black;
     font-weight: bold;
     margin-left: 10px;
     font-size: 17px; 
@@ -428,6 +438,7 @@ aside .étoile
 footer
 {
     display: flex;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     margin: 0px -95px -20px -95px ;
 }
@@ -463,4 +474,16 @@ footer
 .assistance
 {
     margin-left: -80px;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
