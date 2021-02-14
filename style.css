@@ -203,8 +203,8 @@ button
 #section-filtres p
 {
     color: black;
-    font-weight: bold;
-    font-size: 1.1em; 
+    font-weight: 800;
+    font-size: 1em; 
     padding: 7px;
 }
 
@@ -513,6 +513,7 @@ footer
     #hebergements
     {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     #hebergements p 
@@ -522,6 +523,7 @@ footer
 
     .hebergements1
     {
+        flex-wrap: wrap;
         background-color: white;
     }
 
@@ -547,7 +549,6 @@ footer
     aside figure
     {
         margin: 10px 0px;
-        padding-right: -15px;
     }
 
     h3
@@ -586,12 +587,15 @@ footer
     {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 0px;
     }
     .hebergements-marseille
     {
         border-top: transparent;
         border-bottom: #0065FC 3px solid;
         order: -2;
+        margin-left: -48px;
+        padding: 0px 17px 10px 17px;
     }
 
     .hebergements-marseille:hover
@@ -601,26 +605,61 @@ footer
 
     .activites
     {
-        display: flex;
-        padding: 0px 0px 10px 20px;
-        border-bottom:  3px solid burlywood;
+        padding: 0px 30px 10px 30px;
+        border-bottom:  3px solid #F2F2F2;
         order: -1;
+        margin-left: -70px;
     }
 
     #inscription
     {
-        display: flex;
-        width: 35%;
+        margin-left: auto;
         order: -3;
     }
 
     header img
     {
-      order: -4;
+
+        order: -4;
     }
 
     nav
     {
-
+        width: 320px;
+        font-size: 0.8em;
     }
+
+    /* Section filtres*/
+    #filtres
+    {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #section-filtres
+    {
+        margin-left: -40px;
+    }
+    #section-filtres p
+    {
+        font-size: 0.8em;
+    }
+    .cartouche
+    {
+        height: 25px;
+        margin: 0px 12px 10px 0px;
+        padding: 2px 5px 3px 20px ;
+    }
+
+    .cercle
+    {
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+    }
+
+    /*section-recherche*/
+
+    
+   
 }
