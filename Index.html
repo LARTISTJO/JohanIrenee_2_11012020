@@ -36,14 +36,17 @@
                       <input type="search" id="recherche" name="q" 
                       placeholder="Marseille, France">
                     </div>
-                    <button class="rechercher">Rechercher</button>
+                    <button id="rechercher">Rechercher</button>
+                    <div id="icone-recherche">
+                      <i class="fas fa-search"></i>
+                    </div>
                 </form>
 
                 <!--Section filtres-->
                 <div id="section-filtres">
           
                   <div id="filtres">Filtres</div>
-
+                  <div id="cartouches">
                   <div class="cartouche">
                     <div class="cercle">
                       <i class="fas fa-money-bill-wave"></i>
@@ -72,13 +75,14 @@
                     <p class="texte">Animaux autorisés</p>
                   </div>
                 </div>
-
+              </div>
                 <div class="information">
                   <div id="cercle-i">
                     <i class="fas fa-info"></i>
                   </div>
-                    <p id="logements">Plus de 500 logements sont disponibles dans cette ville</p>    
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>    
                 </div>
+                
               </section>
              
 
@@ -193,11 +197,13 @@
                 <!--Les plus populaires-->
                 <aside>
                   <div id="texte-icone">
-                  <h2>Les plus populaires</h2>
-                  <div id="icone">
-                    <i class="fas fa-chart-line"></i>
+                    <h2>Les plus populaires</h2>
+                      <div id="icone">
+                        <i class="fas fa-chart-line"></i>
+                      </div>
                   </div>
-                  </div>
+
+                <div id="populaires">
                   <a href="">
                     <figure>
                       <img src="Images/hebergements/4_small/emile-guillemot-unsplash.jpg" alt="Photo chambre"/>
@@ -243,6 +249,8 @@
                       </figcaption>
                     </figure>
                   </a>
+
+                </div>
                 </aside>
               </section>
 
