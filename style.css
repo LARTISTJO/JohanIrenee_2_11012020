@@ -7,7 +7,7 @@ body
 
 #bloc_page 
 {
-    max-width: 1440px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -24,6 +24,7 @@ header
     display: flex;
     margin-left: 40px;
     margin-top: 40px;
+    width: 93%;
 }
 
 header img
@@ -274,7 +275,7 @@ button
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 65%;
+    width: 61%;
     height: 630px;
     border-radius: 25px;
     margin-right: 40px;
@@ -353,7 +354,7 @@ aside
         flex-direction: column;
         flex-wrap: wrap;
         background-color: #F2F2F2;
-        width: 31%;
+        width: 27%;
         height: 630px;
         border-radius: 25px;
         padding: 15px;
@@ -426,19 +427,20 @@ aside .étoile
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    margin-left: 0px;
+    margin-bottom: 50px;
 }
 
 #activites
 {
     display: flex;
-    justify-content: space-around;
-    margin-right: 20px;
+    justify-content: space-evenly;
 }
 
 #tourisme h2
 {
-    margin: 40px 0px -30px 30px;
+    margin: 40px 0px -30px 45px;
 }
 
 #tourisme figure
@@ -473,16 +475,16 @@ aside .étoile
 footer
 {
     display: flex;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin: 0px -95px -20px -95px ;
+    width: 97%;
 }
 
 .bloc-footer
 {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px 20px 70px;
+    width: 460px;
+    line-height: 5px;
 }
 
 
@@ -490,7 +492,7 @@ footer
 .bloc-footer li
 {
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .bloc-footer a
@@ -501,14 +503,10 @@ footer
 
 .bloc-footer p
 {
+    margin-top: 50px;
+    margin-left: 40px;
     font-size: 18px;
     font-weight: bold;
-    margin: 20px 260px 8px 40px;
-}
-
-.assistance
-{
-    margin-left: -80px;
 }
 
 
