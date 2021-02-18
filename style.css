@@ -523,6 +523,7 @@ footer
     {
         flex-wrap: wrap;
         margin-left: 0px;
+        width: 100%;
     }
 
     nav
@@ -560,7 +561,7 @@ footer
 
     header p
     {
-        margin: 20px 0px 35px auto ;
+        margin: 20px 12px 35px auto ;
         order: -3;
     }
     header img
@@ -570,12 +571,13 @@ footer
     }
 
 
-    /*hebergements*/
+    /* Section hébergements*/
 
     #hebergements
     {
         flex-direction: column-reverse;
         width: 100%;
+        margin-left: 0px;
     }
 
     #hebergements p 
@@ -585,34 +587,48 @@ footer
 
     .hebergements1
     {
-        flex-wrap: wrap;
         background-color: white;
+        width: 100%;
+        margin-right: 0px;
+        padding: 0px;
     }
 
+    .hebergements1 figure
+    {
+        margin-left: 0px;
+        min-width: 310px;
+    }
     .hebergements1 h2
     {
         display: flex;
-        font-size: 1em;
-        margin: 30px -40px 0px 15px;
+        margin: 30px 0px 0px 30px;
     }
 
     .hebergements2
     {
-        margin: 0px;
-        padding: 0px;
+        
     }
+
+    .hebergements1 span
+    {
+        margin: 25px 0px 40px 10px;
+    }
+
+    /*Les plus populaires*/
+
+
     aside
     {
         width: 100%;
-        padding: 10px;
-        margin-left: -10px;
         border-radius: 0px;
+        height: 600px;
+        padding: 0px;
     }
 
     aside figure
     {
-        margin: 10px 0px;
         width: 310px;
+        margin-top: 10px;
     }
 
     h3
@@ -625,24 +641,25 @@ footer
         margin-top: 28%;
     }
 
+    #texte-icone
+    {
+        justify-content: space-between;
+    }
+
+
     #icone
     {
         margin-top: 20px;
-        padding-right: 0px;
-        font-size: 20px;
+        margin-right: 28px;
     }
 
     aside h2
     {
         margin-top: 20px;
-        padding-left: 5px;
-        font-size: 17px;
+        margin-left: 28px;
     }
 
-    .hebergements1 span
-    {
-        margin: 25px 0px 40px 10px;
-    }
+    
 
     
     /* Section filtres*/
@@ -673,9 +690,19 @@ footer
        margin-right: 12px;
     }
 
-    .cercle
+
+    .information
     {
-       
+        margin-left: 0px;
+    }
+    #cercle-i
+    {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 16px;
     }
 
     /*section-recherche*/
@@ -691,7 +718,7 @@ footer
         margin-right: 20px;
     }
 
-    p
+    #section-recherche p
     {
         margin-top: 20px;
     }    
