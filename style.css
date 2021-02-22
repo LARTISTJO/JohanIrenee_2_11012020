@@ -271,7 +271,7 @@ button
     flex-direction: column;
     background-color: #F2F2F2;
     width: 61%;
-    height: 630px;
+    
     border-radius: 25px;
     margin-right: 40px;
     padding: 15px;
@@ -295,12 +295,11 @@ button
     flex-direction: column;
     background-color: white;
     border: white solid 5px;
+    height: 204px;
     margin: auto;
     margin-top: 25px;
-    height: 200px;
-    min-width: 250px;
     border-radius: 20px; 
-    box-shadow: 0px 4px 1px #F2F3F4;
+    box-shadow: 0px 0px 10px #CBD7E4 ;
 }
 
 .hebergements1 img
@@ -322,8 +321,10 @@ button
 
 .hebergements1 figcaption
 {
-    padding: 3px;
+    padding: 10px;
+    line-height: 20px;
 }
+
 
 .étoile
 {
@@ -350,11 +351,16 @@ aside
         flex-wrap: wrap;
         background-color: #F2F2F2;
         width: 27%;
-        height: 630px;
         border-radius: 25px;
         padding: 15px;
     }
    
+#aside2
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
 aside h2
 {
     margin-left: 25px;
@@ -385,10 +391,11 @@ aside figure
 {
     display: flex;
     border: white solid 5px;
-    height: 154px;
-    width: 354px;
+    height: 148px;
+    max-width: 350px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px #CBD7E4 ;
     margin: auto;
     margin-top: 25px;
 }
@@ -401,8 +408,9 @@ aside img
 
 aside figcaption
 {
-    padding: 3px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0px;
 }
 
 aside h3
@@ -413,7 +421,7 @@ aside h3
 
 aside .étoile
 {
-    margin-top: 20%;
+    margin-top: 32%;
 }
 
 /*activités*/
@@ -430,6 +438,7 @@ aside .étoile
 #activites
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -442,8 +451,8 @@ aside .étoile
 {
     display: flex;
     flex-direction: column;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 4px 1px #F2F3F4 ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #CBD7E4 ;
     margin:auto;
     margin-top: 50px;
 }
@@ -463,6 +472,15 @@ aside .étoile
 #tourisme img
 {
     border-radius: 20px 20px 0px 0px;
+}
+
+.width768px
+{
+    display: none;
+}
+.width375px
+{
+    display: none;
 }
 
 /*footer*/
@@ -504,7 +522,9 @@ footer
 }
 
 
-@media only screen and (max-width: 768px)
+
+
+@media only screen and (max-width: 767px)
 {
     * {
         margin: 0;
@@ -527,7 +547,7 @@ footer
 
     nav
     {
-        width: 320px;
+        width: 100% ;
         margin-left: 0px;
     }
 
@@ -610,7 +630,7 @@ footer
     }
     .hebergements1 span
     {
-        margin: 25px 0px 0px 30px;
+        margin: 25px 0px 0px 35px;
     }
 
     /*Les plus populaires*/
@@ -619,10 +639,11 @@ footer
     aside
     {
         width: 100%;
+        justify-content: space-around;
         border-radius: 0px;
-        height: 600px;
         padding: 0px;
         margin-bottom: 15px;
+        padding-bottom: 10px;
     }
 
     aside figure
@@ -634,11 +655,6 @@ footer
     h3
     {
         padding-right: 0px;
-    }
-
-    aside .étoile
-    {
-        margin-top: 30%;
     }
 
     #texte-icone
@@ -662,14 +678,16 @@ footer
     Aside figcaption
     {
         line-height: 20px;
-        margin-top: 10px;
-        margin-left: 20px;
-        padding: 0px;
     }
     
 
     
     /* Section filtres*/
+
+    #section-filtres
+    {
+        width: 100%;
+    }
     #filtres
     {
         margin-left: -13px;
@@ -681,7 +699,6 @@ footer
     {
        flex-wrap: wrap;
        margin-left: -15px;
-       margin-right: -40px;
     }
 
     
@@ -713,11 +730,13 @@ footer
         margin-left: 20px;
     }
 
+    
     h1
     {
         margin-top: 40px;
         margin-right: 20px;
     }
+
 
     #section-recherche p
     {
@@ -751,19 +770,17 @@ footer
         width: 100%;
         margin-left: 0px;
         margin-bottom: 50px;
-        margin-top: 800px;
     }
 
     #activites
     {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
     }
 
     #tourisme h2
     {
-        margin: 70px 0px 0px 32px;
+        margin: 0px 0px 0px 35px;
     }
 
     #tourisme figure
@@ -772,10 +789,30 @@ footer
         min-width: 310px;
     }
 
+    #tourisme img
+    {
+        height: 134px;
+        width: 310px;
+    }
     #tourisme figcaption
     {
         padding: 15px;
         border-radius: 30px;
+    }
+
+    .width375px
+    {
+        display: flex;
+    }
+
+    .width768px
+    {
+        display: none;
+    }
+
+    .desktop
+    {
+        display: none;
     }
 
     /*footer*/
@@ -784,6 +821,7 @@ footer
     {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
         padding: 30px 0px;
     }
 
@@ -809,5 +847,115 @@ footer
     {
         margin:30px 0px 35px 30px ;
     }
+}
 
+
+@media only screen and (min-width:768px) and (max-width:1024px)
+{
+    /*header*/
+
+    header
+    {
+        margin-left: 30px;
+    }
+
+    /*section-recherche*/
+
+    #section-recherche
+    {
+        margin-left: 30px;
+    }
+
+    #cartouches
+    {
+        flex-wrap: wrap;
+    }
+        
+    .cartouche
+    {
+        margin-bottom: 15px;
+    }
+
+    #filtres
+    {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    /*Section hébergements*/
+    #hebergements
+    {
+        margin-left: 25px;
+        flex-direction: column-reverse;
+    }
+
+    .hebergements1
+    {
+        width: 98%;
+    }
+
+    .hebergements1 span
+    {
+        margin: 30px 0px 10px 50px;
+    }
+
+    aside
+    {
+        width: 98%;
+        margin-bottom: 40px;
+    }
+
+    #texte-icone
+    {
+        justify-content: center;
+    }
+
+    aside h2
+    {
+        margin-right: 15%;
+    }
+    #aside2
+    {
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    aside figure
+    {
+        margin-right: 35px;
+    }
+    /*tourisme*/
+
+    .desktop
+    {
+        display: none;
+    }
+
+    .width768px
+    {
+        display: flex;
+        width: 760px;
+    }
+    .tablette
+    {
+        display: flex;
+        width: 760px;
+    }
+
+    .tablette figure
+    {
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .tablette img
+    {
+        height: 135px;
+    }
+
+
+    footer
+    {
+        width: 110%;
+    }
 }
