@@ -483,7 +483,6 @@ footer
 }
 
 
-
 .bloc-footer li
 {
     list-style-type: none;
@@ -591,6 +590,7 @@ footer
         width: 100%;
         margin-right: 0px;
         padding: 0px;
+        margin-bottom: 50px;
     }
 
     .hebergements1 figure
@@ -604,14 +604,13 @@ footer
         margin: 30px 0px 0px 30px;
     }
 
-    .hebergements2
+    .hebergements1 figcaption
     {
-        
+        margin-left: 8px;
     }
-
     .hebergements1 span
     {
-        margin: 25px 0px 40px 10px;
+        margin: 25px 0px 0px 30px;
     }
 
     /*Les plus populaires*/
@@ -623,6 +622,7 @@ footer
         border-radius: 0px;
         height: 600px;
         padding: 0px;
+        margin-bottom: 15px;
     }
 
     aside figure
@@ -633,12 +633,12 @@ footer
 
     h3
     {
-        font-size: 12px;
+        padding-right: 0px;
     }
 
     aside .étoile
     {
-        margin-top: 28%;
+        margin-top: 30%;
     }
 
     #texte-icone
@@ -659,6 +659,13 @@ footer
         margin-left: 28px;
     }
 
+    Aside figcaption
+    {
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 0px;
+    }
     
 
     
@@ -676,14 +683,8 @@ footer
        margin-left: -15px;
        margin-right: -40px;
     }
-    #section-filtres
-    {
+
     
-    }
-    #section-filtres p
-    {
-       
-    }
     .cartouche
     {
        margin-bottom: 15px;
@@ -742,12 +743,71 @@ footer
         margin-left: -15px;
     }
 
-    #grande-cartouche
-    {
-        ;
-    }
-    #recherche
-    {
-    }
    
+    /*activités*/
+
+    #tourisme
+    {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        margin-top: 800px;
+    }
+
+    #activites
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #tourisme h2
+    {
+        margin: 70px 0px 0px 32px;
+    }
+
+    #tourisme figure
+    {
+        margin: 30px 0px 0px 0px;
+        min-width: 310px;
+    }
+
+    #tourisme figcaption
+    {
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    /*footer*/
+
+    footer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+    }
+
+    .bloc-footer
+    {
+        width: 310px;
+    }
+
+    .bloc-footer li
+    {
+        list-style-type: none;
+        margin-bottom: 22px;
+        margin-left: 30px;
+    }
+
+    .bloc-footer a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .bloc-footer p
+    {
+        margin:30px 0px 35px 30px ;
+    }
+
 }
