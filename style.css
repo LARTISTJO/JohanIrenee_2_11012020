@@ -177,8 +177,7 @@ button
     height: 20px;
     font-size: 1.2em;
     font-weight: bold;
-    margin-right: 40px;
-    margin-left: -5px;
+    margin: 13px 40px 0px -5px;
 }
 
 #cartouches
@@ -974,12 +973,12 @@ footer
     .width768px
     {
         display: flex;
-        width: 760px;
+        width: 750px;
     }
     .tablette
     {
         display: flex;
-        width: 760px;
+        width: 740px;
     }
 
     .tablette figure
@@ -994,11 +993,7 @@ footer
     }
 
 
-    footer
-    {
-        justify-content: center;
-    }
-
+    /*Footer*/
 
     .bloc-footer
     {
