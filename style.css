@@ -269,31 +269,30 @@ button
     margin: 5px 0px;
 }
 
-.hebergements1
+#hebergements1
 {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
     width: 61%;
-    
     border-radius: 25px;
     margin-right: 40px;
     padding: 15px;
 }
 
-.hebergements1 h2
+#hebergements1 h2
 {
     margin: 25px 0px 0px 25px;
 }
 
-.hebergements2
+#hebergements2
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.hebergements1 figure
+#hebergements1 figure
 {
     display: flex;
     flex-direction: column;
@@ -304,11 +303,22 @@ button
     box-shadow: 0px 0px 10px #d7d7d7 ;
 }
 
-.hebergements1 img
+#hebergements1 img
 {
     border-radius: 20px 20px 0px 0px;
 }
-.hebergements1 a
+
+.desktop-tablette
+{
+    display: flex;
+}
+
+.smartphone
+{
+    display: none;
+}
+
+#hebergements1 a
 {
     text-decoration: none;
 }
@@ -321,14 +331,14 @@ button
     font-weight: 800;
 }
 
-.hebergements1 figcaption
+#hebergements1 figcaption
 {
     padding: 10px;
     line-height: 20px;
 }
 
 
-.étoile
+.etoile
 {
     color: #0065FC;
     font-size: 14px;
@@ -339,7 +349,7 @@ button
     color: #F2F2F2;
 }
 
-.hebergements1 span
+#hebergements1 span
 {
     margin: 50px 0px 0px 30px;
     font-size: 1.1em;
@@ -392,7 +402,7 @@ aside a
 aside figure
 {
     display: flex;
-    height: 148px;
+    height: 138px;
     max-width: 350px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #d7d7d7 ;
@@ -409,19 +419,19 @@ aside img
 aside figcaption
 {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 0px;
 }
 
 aside h3
 {
     display: flex;
-    padding-right: 35px;
+    padding-right: 25px;
 }
 
-aside .étoile
+aside .etoile
 {
-    margin-top: 32%;
+    margin-top: 22%;
 }
 
 /*activités*/
@@ -599,7 +609,7 @@ footer
         margin-left: 0px;
     }
 
-    .hebergements1
+    #hebergements1
     {
         background-color: white;
         width: 100%;
@@ -608,21 +618,30 @@ footer
         margin-bottom: 50px;
     }
 
-    .hebergements1 figure
+    #hebergements1 figure
     {
         margin-left: 0px;
         margin-top: 15px;
-        min-width: 310px;
+        width: 310px;
     }
 
-    .hebergements1 h2
+    #hebergements1 h2
     {
         display: flex;
         margin: 20px 0px 10px 30px;
     }
 
+    .desktop-tablette
+    {
+        display: none;
+    }
 
-    .hebergements1 span
+    .smartphone
+    {
+        display: flex;
+    }
+
+    #hebergements1 span
     {
         margin: 25px 0px 0px 35px;
     }
@@ -676,8 +695,9 @@ footer
         margin-left: 28px;
     }
 
-    Aside figcaption
+    aside figcaption
     {
+        margin-right: -5px;
         line-height: 20px;
     }
     
@@ -709,11 +729,11 @@ footer
        margin-right: 12px;
     }
 
-
     .information
     {
         margin-left: 0px;
     }
+
     #cercle-i
     {
         height: 20px;
@@ -731,13 +751,11 @@ footer
         margin-left: 20px;
     }
 
-    
     h1
     {
         margin-top: 40px;
         margin-right: 20px;
     }
-
 
     #section-recherche p
     {
@@ -763,7 +781,6 @@ footer
         margin-left: -15px;
     }
 
-   
     /*activités*/
 
     #tourisme
@@ -795,6 +812,7 @@ footer
         height: 134px;
         width: 310px;
     }
+
     #tourisme figcaption
     {
         padding: 15px;
@@ -901,6 +919,7 @@ footer
     }
 
     /*Section hébergements*/
+
     #hebergements
     {
         width: 100%;
@@ -908,24 +927,24 @@ footer
         flex-direction: column-reverse;
     }
 
-    .hebergements1
+    #hebergements1
     {
         width: 100%;
         padding: 0px;
     }
 
-    .hebergements2
+    #hebergements2
     {
         justify-content: center;
     }
 
-    .hebergements1 figure
+    #hebergements1 figure
     {
         margin: 15px;
     }
 
 
-    .hebergements1 span
+    #hebergements1 span
     {
         margin: 30px 0px 20px 50px;
     }
