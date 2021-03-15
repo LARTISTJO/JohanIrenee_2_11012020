@@ -69,11 +69,19 @@ header p
 {
     border-top: #0065FC 2px solid;
 }
+
 .activites
 {
     color: black;
     text-decoration: none;
     font-weight: 500;
+    border-top: transparent 2px solid;
+    padding: 45px 17px 0px 17px;
+}
+
+.activites:hover
+{
+    border-top: #0065FC 2px solid;
 }
 
 /*section recherche*/
